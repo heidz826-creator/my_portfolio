@@ -113,7 +113,18 @@
 
     <section id="contact">
       <h2>☎️ Contact</h2>
-      <div class="contact-container">
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+
+        <input type="email" id="email" placeholder="Your Email">
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+      <!-- <div class="contact-container">
         <a href="tel:+639306202247" class="contact-link">📱 +63 930 620 2247</a>
         <a href="mailto:heidz826@gmail.com" class="contact-link"
           >📧 heidz826@gmail.com</a
@@ -139,7 +150,7 @@
           rel="noopener noreferrer"
           >💼 LinkedIn</a
         >
-      </div>
+      </div> -->
     </section>
 
     <footer>
@@ -147,6 +158,15 @@
     </footer>
 
     <button id="topBtn">⬆️</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+      emailjs.init({
+        publicKey: "PeBgL9uVl-QFALcuS",
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
